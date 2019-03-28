@@ -11,6 +11,7 @@ permissions:
     mode: 777
     type:
       - directory
+      - file
 
 hooks:
   BeforeInstall:
