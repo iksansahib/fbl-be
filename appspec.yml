@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/fbl/fe
+
+hooks:
+  BeforeInstall:
+    - location: deploy/before_install.sh
+      timeout: 300
+      runas: ec2-user
+  After:
+    - location: deploy/run.sh
+      timeout: 300
+      runas: ec2-user
