@@ -4,10 +4,10 @@ const Knex = require('knex');
 const knex = Knex({
   client: 'mysql2',
   connection: {
-    host: 'localhost',
-    user: 'root',
-    password: 'iksanfib',
-    database: 'fbl'
+    host: '159.65.7.150',
+    user: 'fib',
+    password: 'Pa55word!!!',
+    database: 'coba'
   }
 });
 
